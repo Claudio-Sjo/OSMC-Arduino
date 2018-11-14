@@ -1,0 +1,24 @@
+The Arduino part of the project depends on IRLib2
+https://github.com/cyborg5/IRLib2
+please note that Arduino IDE uses a buggy version of gcc, in order to make it work you need to follow
+the instructions given at https://forum.arduino.cc/index.php?topic=574020.0
+
+In details the workaround is:
+
+In the Arduino IDE
+    Tools > Board > Boards Manager
+    Wait for downloads to finish.
+    When you move the mouse pointer over "Arduino AVR Boards", you will see a "Select version" dropdown menu appear. Select "1.6.21".
+    Click "Install".
+    Wait for installation to finish.
+    Click "Close".
+
+
+
+Due to a bug, this alternative workaround doesn't work with Arduino IDE 1.8.6, but it will work with any other version of the Arduino IDE.
+
+If you have File > Preferences > Check for updates on startup checked, the Arduino IDE may occasionally notify you that a new version of Arduino AVR Boards is available, you'll need to refrain from updating back to the new Arduino AVR Boards version, 
+otherwise you'll be back to seeing the segmentation fault error again.
+
+The Raspberry Pi part of the project depends on http://wiringpi.com/
+The installation of wiringPi is automated by means of install.sh
