@@ -16,6 +16,7 @@ The Raspberry part of the project exploits WiringPi libs for generating a 1Hz si
 the program blink.c from WiringPi examples is used for that.
 The blink program is ran automatically from /etc/rc.local
 The following line needs to be added inside that file before "exit 0"
+
 sudo /usr/local/bin/blink &
 
 On Arduino IDE, the IRLib2 set of libraries are needed.
@@ -27,16 +28,16 @@ In order to sniff the codes from the remote you can start with the example in th
 
 Arduino and Raspberry needs to be connected, and you also need an IR receiver chip.
 The connections among these objects are as follows
- *            Connections : Arduino Pro Micro    Raspberry Pi   TSOP1838
- *                          ------------------+----------------+------
- *                                  2         |  BCM 18 (12)   | Out
- *                                  3         |  BCM 17 (11)   |
- *                                  4         |      RUN       |
- *                                 Vcc        |  5v Power (2)  | 
- *                                            | 3v3 Power (1)  | Vs
- *                                 GND        |    Ground (6)  |       
- *                                            |    Ground (9)  | GND
- *                          ------------------+----------------+------         
+            Connections : Arduino Pro Micro    Raspberry Pi   TSOP1838
+                          ------------------+----------------+------
+                                  2         |  BCM 18 (12)   | Out
+                                  3         |  BCM 17 (11)   |
+                                  4         |      RUN       |
+                                 Vcc        |  5v Power (2)  | 
+                                            | 3v3 Power (1)  | Vs
+                                 GND        |    Ground (6)  |       
+                                            |    Ground (9)  | GND
+                          ------------------+----------------+------         
  
  Enjoy OSMC and Arduino!
  
