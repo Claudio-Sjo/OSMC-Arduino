@@ -28,16 +28,16 @@ In order to sniff the codes from the remote you can start with the example in th
 
 Arduino and Raspberry needs to be connected, and you also need an IR receiver chip.
 The connections among these objects are as follows
-            Connections : Arduino Pro Micro    Raspberry Pi   TSOP1838
-                          ------------------+----------------+------
-                                  2         |  BCM 18 (12)   | Out
-                                  3         |  BCM 17 (11)   |
-                                  4         |      RUN       |
-                                 Vcc        |  5v Power (2)  | 
-                                            | 3v3 Power (1)  | Vs
-                                 GND        |    Ground (6)  |       
-                                            |    Ground (9)  | GND
-                          ------------------+----------------+------         
+*            Connections : Arduino Pro Micro    Raspberry Pi   TSOP1838
+*                          ------------------+----------------+------
+*                                  2         |  BCM 18 (12)   | Out
+*                                  3         |  BCM 17 (11)   |
+*                                  4         |      RUN       |
+*                                 Vcc        |  5v Power (2)  | 
+*                                            | 3v3 Power (1)  | Vs
+*                                 GND        |    Ground (6)  |       
+*                                            |    Ground (9)  | GND
+*                          ------------------+----------------+------         
  
  Enjoy OSMC and Arduino!
  
